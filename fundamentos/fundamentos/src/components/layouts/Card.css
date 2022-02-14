@@ -1,0 +1,25 @@
+.card {
+    color: cornsilk;
+    border-radius: 8px ;
+    overflow: hidden;
+    border: solid 3px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 500px ;
+}
+
+.title{
+    padding:5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content{
+    flex: 1;
+    padding:20px;
+    background-color:cadetblue;
+    color:black
+}

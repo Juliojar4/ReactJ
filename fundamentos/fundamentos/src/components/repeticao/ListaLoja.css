@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+thead{
+    background-color:bisque
+}
+
+.Par {
+    background-color: #ddd;
+}
+
+.Impar {
+    background-color: #ccc;
+}
+
+
+th, tr, td{
+    border: solid white;
+    padding:5px
+}
