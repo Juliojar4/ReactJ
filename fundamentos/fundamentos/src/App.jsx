@@ -16,14 +16,30 @@ import Usuario from './components/condicional/usuario'
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndeiretaPai from './components/comunicacao/IndeiretaPai';
 import Input from './components/formulario/input'
+import Contador from './components/contador/Contador'
+import Mega from './components/megasena/Mega';
+import Imc from './components/imc/Imc';
 
 export default () => {
     return (
         <div id="app">
             <h1>Fundamentos React</h1>
 
-
             <div className="cards">
+
+            <Card titulo="#13 IMC GG">
+                    <Imc></Imc>
+            </Card>
+
+
+            <Card titulo="#12 Mega">
+                    <Mega qntd={7}></Mega>
+            </Card>
+
+            <Card titulo="#11 Contador" color="#f23fff">
+                    <Contador numeroInicial={10}></Contador>
+            </Card>
+
             <Card titulo="#10 Input" color="#CC1">
                     <Input></Input>
             </Card>
