@@ -17,4 +17,4 @@ const Content = props => (
         </Routes>
     </main>
 )
-export default Content
+export default Content 
