@@ -10,7 +10,8 @@ function calcFatorial(n) {
 
 const UseEffect = (props) => {
     const [number, setNumber] = useState(1)
-    const [fatorial, setFatorial] = useState(1)
+    const [fatorial, setFatorial] = useState(1) 
+    const [impPar, setImpPar] = useState('Impar')
 
     useEffect(function () {
         setFatorial(calcFatorial(number))
@@ -20,7 +21,16 @@ const UseEffect = (props) => {
         if (fatorial >= 100000) {
             document.title = "Eita!!!"
         }
-    },[fatorial])
+    }, [fatorial])
+
+    useEffect(function () {
+        if (number % 2 === 0) {
+             setImpPar('Par')
+    } else {
+            setImpPar('Impar')
+        }    
+    }, [number])
+    
 
     return (
         <div className="UseEffect">
@@ -35,8 +45,9 @@ const UseEffect = (props) => {
                     <span className="text red">{fatorial === -1 ? 'Não existe' : fatorial}</span>
                 </div>
                 <input type="number" className="input" value={number} onChange={(e) => setNumber(e.target.value)} />
-
             </div>
+            <SectionTitle title="Exercício #02" />
+            <span className="text">{impPar}</span>
         </div>
     )
 }
