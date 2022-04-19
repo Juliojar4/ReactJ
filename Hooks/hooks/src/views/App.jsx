@@ -8,13 +8,13 @@ import Content from '../components/layout/Content'
 const App = props => {
 
     return (
-            <div className="App">
+         <div className="App">
                 <Router>
                     <Menu />
                     <Content />
                 </Router>
-            </div>
-       )
+         </div>
+    )
 }
 
 export default App
